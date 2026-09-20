@@ -1,0 +1,6 @@
+{
+  "name": "Allies for Strays and People Foundation",
+  "description": "Clean, modern mobile app for members and volunteers of Allies for Strays and People Foundation — Strays • People • Community",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

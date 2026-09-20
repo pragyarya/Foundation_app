@@ -1,25 +1,21 @@
 package com.example.model
 
 enum class MemberRole(val displayName: String) {
-  VOLUNTEER("Registered Volunteer"),
-  FOSTER_PARENT("Foster Caregiver"),
-  COMMUNITY_FEEDER("Community Stray Feeder"),
-  FOUNDATION_MEMBER("Foundation Member"),
-  EXECUTIVE_MEMBER("Executive Member")
+    FOUNDATION_MEMBER("Foundation Member"),
+    EXECUTIVE_MEMBER("Executive Member"),
+    VOLUNTEER("Registered Volunteer")
 }
 
 data class MemberProfile(
-  val id: String,
-  val fullName: String,
-  val email: String,
-  val phone: String,
-  val role: MemberRole = MemberRole.FOUNDATION_MEMBER,
-  val designation: String = role.displayName,
-  val memberSince: String,
-  val photoUri: String? = null,
-  val bloodGroup: String? = null,
-  val emergencyContact: String? = null,
-  val address: String? = null,
-  val validThrough: String = "Active • Verified Member",
-  val isDemoAccount: Boolean = false
+    val id: String,
+    val memberNo: String,
+    val fullName: String,
+    val phone: String,
+    val email: String,
+    val photoUri: String? = null,
+    val designation: String,
+    val department: String,
+    val joiningDate: String? = null,
+    val status: String = "pending",
+    val isActive: Boolean = true
 )
